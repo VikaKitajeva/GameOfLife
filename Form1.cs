@@ -93,7 +93,7 @@ namespace GameOfLife
                             }
                             int x = row + i;
                             int y = col + j;
-                            if (x > 0 && x < numColsRows && y > 0 && y < numColsRows)
+                            if (x >= 0 && x < numColsRows && y >= 0 && y < numColsRows)
                             {
                                 neighbourIndex = Getindex(x, y);
                                 if (labelList[neighbourIndex].BackColor == aliveColor)
